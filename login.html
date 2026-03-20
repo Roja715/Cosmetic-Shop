@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Beauty Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffccdd;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #d63384;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            color: #ffccdd;
+        }
+
+        /* LOGIN BOX */
+        .login {
+            background-color: white;
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .login h2 {
+            margin-bottom: 25px;
+            color: #d63384;
+            font-size: 28px;
+        }
+
+        .login input {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login input:focus {
+            border-color: #d63384;
+            outline: none;
+        }
+
+        .login button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #d63384;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login button:hover {
+            background-color: #b02070;
+        }
+
+        .login p {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .login p a {
+            color: #d63384;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #d63384;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <h1>Beauty Products</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+        <a href="register.html">Account</a> <!-- FIXED: Account points to register -->
+    </nav>
+</header>
+
+<section class="login">
+    <h2>Login</h2>
+    <form action="#" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+   
+</section>
+
+<footer>
+    <p>© 2026 Beauty Products. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
