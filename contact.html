@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products - Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #d63384;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ffccdd;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 30px;
+            color: #d63384;
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .contact textarea {
+            height: 150px;
+        }
+
+        .contact button {
+            background-color: #d63384;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #b02070;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Beauty Products</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Add to Cart</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Beauty Products. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
