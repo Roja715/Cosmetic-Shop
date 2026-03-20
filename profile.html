@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Beauty Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #d63384;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ffccdd;
+        }
+
+        /* PROFILE */
+        .profile-container {
+            width: 350px;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin: 50px auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #d63384;
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 3px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #d63384;
+            outline: none;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 8px 20px;
+            background-color: #d63384;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .buttons a:hover {
+            background-color: #b02070;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Beauty Products</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+            <a href="login.html">Account</a>
+            
+        </nav>
+    </header>
+
+    <!-- PROFILE -->
+    <div class="profile-container">
+        <h2>My Profile</h2>
+
+        <img class="profile-pic" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150" alt="Profile Picture">
+
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Phone</label>
+        <input type="text" placeholder="Enter your phone">
+
+        <label>Address</label>
+        <input type="text" placeholder="Enter your address">
+
+        <div class="buttons">
+            <a href="#">Save Profile</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Beauty Products. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
